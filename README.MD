@@ -9,7 +9,7 @@
 > Web project using ReactJS ⚛
 
 This is the first project of Ignite bootcamp 2021 course.  
-The proporse of the project is learn the basic concepts of
+The proposal of the project is to learn the basic concepts of React for web, building a webapp from zero.zero.
 
 ---
 
@@ -23,7 +23,7 @@ The proporse of the project is learn the basic concepts of
   yarn weback serve
 ```
 
-### Dependecies & Vertions ✏️
+### Dependecies & Versions ✏️
 
 - @babel/cli - *^7.13.16",*
 - @babel/core - *^7.14.0",*
