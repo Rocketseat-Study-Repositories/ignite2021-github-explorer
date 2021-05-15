@@ -1,8 +1,17 @@
+import { useState, useEffect } from "react";
 import { RepositoryItem } from "./RepositoryItem";
-import '../styles/repositories.scss';
+import "../styles/repositories.scss";
 
 export function RepositoryList() {
-  return(
+  const [repositories, setRepositories] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/brunogirome/repos")
+      .then((response) => response.json())
+      .then((data) => setRepositories(data));
+  }, []);
+
+  return (
     <section className="repository-list">
       <h1>Repositories list</h1>
 
@@ -13,5 +22,5 @@ export function RepositoryList() {
         <RepositoryItem />
       </ul>
     </section>
-  )
+  );
 }
