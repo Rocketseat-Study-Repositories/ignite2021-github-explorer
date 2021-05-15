@@ -1,14 +1,12 @@
 export function RepositoryItem({ repository }) {
+  const { name, description, html_url } = repository;
+
   return (
     <li>
-      <strong>
-        { repository ?? 'B3 Node Analysis' }
-      </strong>
-      <p>Get B3 anlyses for NodeJS apis</p>
+      <strong>{name}</strong>
+      <p>{description}</p>
 
-      <a href="">
-        Access github repository
-      </a>
+      <a href={html_url}>Access repository</a>
     </li>
   );
 }
